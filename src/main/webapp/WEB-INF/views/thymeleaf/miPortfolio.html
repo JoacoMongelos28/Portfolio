@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Joaquin Mongelos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Contenedor principal */
+        .container {
+            display: flex; /* Distribuye en columnas */
+            height: 100vh; /* Ocupa toda la altura de la pantalla */
+        }
+
+        /* Columna del Header */
+        header {
+            flex: 1; /* Ocupa una columna */
+            background-color: #f4f4f4;
+            padding: 40px 20px;
+        }
+
+        header img {
+            max-width: 75%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .contenedor-imagen-principal {
+            text-align: center;
+        }
+
+        .contenedor-imagen {
+            margin-bottom: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin-top: 30px;
+            padding: 0 10px;
+        }
+
+        header nav ul li {
+            margin-bottom: 10px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+        }
+
+        /* Columna del Main */
+        main {
+            flex: 3; /* Ocupa más espacio que el header */
+            padding: 40px;
+            background-color: #fff;
+        }
+
+        main h1, main h4 {
+            margin-bottom: 10px;
+        }
+
+        main p {
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+        /* From Uiverse.io by Madflows */
+        .toggle-switch {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            width: 50px;
+            height: 25px;
+            --light: #d8dbe0;
+            --dark: #28292c;
+            --link: rgb(27, 129, 112);
+            --link-hover: rgb(24, 94, 82);
+        }
+
+        .switch-label {
+            position: absolute;
+            width: 110%;
+            height: 30px;
+            background-color: var(--dark);
+            border-radius: 15px;
+            cursor: pointer;
+            border: 2px solid var(--dark);
+        }
+
+        .checkbox {
+            position: absolute;
+            display: none;
+        }
+
+        .slider {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+        }
+
+        .checkbox:checked ~ .slider {
+            background-color: var(--light);
+        }
+
+        .slider::before {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            -webkit-box-shadow: inset 6px -2px 0 0 var(--light);
+            box-shadow: inset 6px -2px 0 0 var(--light);
+            background-color: var(--dark);
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+        }
+
+        .checkbox:checked ~ .slider::before {
+            -webkit-transform: translateX(25px);
+            -ms-transform: translateX(25px);
+            transform: translateX(25px);
+            background-color: var(--dark);
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .spring-boot, .laravel {
+            height: 32px;
+        }
+
+        .contenedor-frameworks, .contenedor-lenguajes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px 0;
+        }
+
+        .contenedor-frameworks div, .contenedor-lenguajes div {
+            text-align: center;
+        }
+
+        .titulo {
+            margin: 30px 0;
+        }
+
+        .contenedor-redes {
+            display: flex;
+            gap: 30px;
+            font-size: 32px;
+            position: absolute;
+            bottom: 20px;
+        }
+
+        .contenedor-principal-redes {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<div class="toggle-switch">
+    <label class="switch-label">
+        <input type="checkbox" class="checkbox">
+        <span class="slider"></span>
+    </label>
+</div>
+<div class="container">
+    <header>
+        <div class="contenedor-imagen-principal">
+            <div class="contenedor-imagen"><img src="http://localhost:8080/css/imagenes/Joaquin Mongelos.jpg"
+                                                alt="Joaquin Mongelos"></div>
+            <p>Mongelos, Joaquin</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">CV</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="contenedor-principal-redes">
+            <div class="contenedor-redes">
+                <a href="https://github.com/JoacoMongelos28" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/joaquinmongelos/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <h1>I'm Joaquin Mongelos</h1>
+            <h4>Backend & Frontend Developer</h4>
+            <p>I am a Junior Developer with experience in university projects and a fast learner of new technologies,
+                ready to contribute value and grow professionally in the software development field.</p>
+        </article>
+
+        <article>
+            <h2 class="titulo">Programming Languages</h2>
+            <div class="contenedor-lenguajes">
+                <div>
+                    <div><img src="http://localhost:8080/css/imagenes/HTML5.png" alt="HTML 5"></div>
+                    <span>HTML 5</span>
+                </div>
+                <div>
+                    <div><img src="http://localhost:8080/css/imagenes/CSS3.png" alt="CSS 3"></div>
+                    <span>CSS 3</span>
+                </div>
+                <div>
+                    <div><img src="http://localhost:8080/css/imagenes/JAVA.png" alt="JAVA"></div>
+                    <span>JAVA</span>
+                </div>
+                <div>
+                    <div><img src="http://localhost:8080/css/imagenes/JS.png" alt="JAVASCRIPT"></div>
+                    <span>JAVASCRIPT</span>
+                </div>
+                <div>
+                    <div><img src="http://localhost:8080/css/imagenes/MYSQL.png" alt="MYSQL"></div>
+                    <span>MYSQL</span>
+                </div>
+                <div>
+                    <div><img src="http://localhost:8080/css/imagenes/C SHARP.png" alt="C#"></div>
+                    <span>C#</span>
+                </div>
+                <div>
+                    <div><img src="http://localhost:8080/css/imagenes/PHP.png" alt="PHP"></div>
+                    <span>PHP</span>
+                </div>
+                <div>
+                    <div><img src="http://localhost:8080/css/imagenes/TYPESCRIPT.png" alt="TYPESCRIPT"></div>
+                    <span>TYPESCRIPT</span>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="titulo">Frameworks</h2>
+            <div class="contenedor-frameworks">
+                <div>
+                    <div><img src="http://localhost:8080/css/imagenes/SPRINGBOOT.png" alt="SPRING BOOT"
+                              class="spring-boot"></div>
+                    <span>SPRING BOOT</span>
+                </div>
+                <div>
+                    <div><img src="http://localhost:8080/css/imagenes/ASPNET.png" alt="ASP.NET"></div>
+                    <span>ASP.NET</span>
+                </div>
+                <div>
+                    <div><img src="http://localhost:8080/css/imagenes/LARAVEL.png" alt="LARAVEL" class="laravel"></div>
+                    <span>LARAVEL</span>
+                </div>
+                <div>
+                    <div><img src="http://localhost:8080/css/imagenes/ANGULAR.png" alt="ANGULAR"></div>
+                    <span>ANGULAR</span>
+                </div>
+            </div>
+        </article>
+    </main>
+</div>
+</body>
+</html>
