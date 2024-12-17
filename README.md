@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Proyecto base Taller Web I (Maven and Thymeleaf)
 ===============================
 
@@ -115,3 +116,7 @@ docker run --name mysql-container -d -p 3306:3306 mysql # sudo apt install mysql
 * Node 18.16.1 o superior <- Instalación manual desde la [página de node](https://nodejs.org/en) 
 
 *_Proyecto modificado en base a: [Spring MVC hello world example (Maven and Thymeleaf)](https://mkyong.com/spring-mvc/spring-mvc-hello-world-example/) _*
+=======
+# Portfolio
+My portfolio
+>>>>>>> f9326b6aa462ede1c4f264c864d430c373835e45
