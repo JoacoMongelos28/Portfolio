@@ -14,15 +14,27 @@
 
         /* Contenedor principal */
         .container {
-            display: flex; /* Distribuye en columnas */
-            height: 100vh; /* Ocupa toda la altura de la pantalla */
+            display: flex; /* Mantiene las dos columnas */
+            height: 100vh; /* Ocupa toda la altura de la ventana */
+            overflow: hidden; /* Previene scroll en el contenedor principal */
         }
 
-        /* Columna del Header */
         header {
             flex: 1; /* Ocupa una columna */
             background-color: #f4f4f4;
             padding: 40px 20px;
+            position: sticky; /* Hace que el header quede visible mientras haces scroll */
+            top: 0; /* Se "pega" al borde superior */
+            height: 100vh; /* Asegura que el contenido ocupe toda la columna */
+            overflow-y: auto; /* Permite desplazarse dentro del header si el contenido es demasiado grande */
+        }
+
+        main {
+            flex: 3; /* Ocupa más espacio que el header */
+            padding: 40px;
+            background-color: #fff;
+            overflow-y: auto; /* Habilita el scroll para el contenido principal */
+            height: 100vh; /* Limita el alto del contenedor principal */
         }
 
         header img {
@@ -53,13 +65,6 @@
             text-decoration: none;
             color: #333;
             font-size: 20px;
-        }
-
-        /* Columna del Main */
-        main {
-            flex: 3; /* Ocupa más espacio que el header */
-            padding: 40px;
-            background-color: #fff;
         }
 
         main h1, main h4 {
@@ -166,6 +171,11 @@
             display: flex;
             justify-content: center;
         }
+
+        .linkedin, .github {
+            text-decoration: none;
+            color: inherit;
+        }
     </style>
 </head>
 <body>
@@ -184,16 +194,17 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">CV</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="http://localhost:8080/pdfs/Plan.pdf" target="_blank"><i class="fa-solid fa-file"></i> CV</a></li>
+                <li><a href="mailto:joaquinmongelos75@gmail.com"><i class="fa-solid fa-address-book"></i> Contact</a></li>
             </ul>
         </nav>
 
         <div class="contenedor-principal-redes">
             <div class="contenedor-redes">
-                <a href="https://github.com/JoacoMongelos28" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                <a href="https://www.linkedin.com/in/joaquinmongelos/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="github" href="https://github.com/JoacoMongelos28" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                <a class="linkedin" href="https://www.linkedin.com/in/joaquinmongelos/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </header>
@@ -206,8 +217,33 @@
         </article>
 
         <article>
+            <h2>Proyects</h2>
+            <section>
+                <div>
+                    <div><img src="http://localhost:8080/css/imagenes/SPRINGBOOT.png" alt="Motomensajeria"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur commodi,
+                        consequuntur delectus error excepturi, fuga ipsa laborum magni non omnis perspiciatis porro
+                        repellat rerum vitae voluptate voluptatem voluptatibus voluptatum!</p>
+                </div>
+                <div>
+                    <div><img src="http://localhost:8080/css/imagenes/SPRINGBOOT.png" alt="Blackjack - Casino"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur commodi,
+                        consequuntur delectus error excepturi, fuga ipsa laborum magni non omnis perspiciatis porro
+                        repellat rerum vitae voluptate voluptatem voluptatibus voluptatum!</p>
+                </div>
+                <div>
+                    <div><img src="http://localhost:8080/css/imagenes/SPRINGBOOT.png" alt="Pizarra Online"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur commodi,
+                        consequuntur delectus error excepturi, fuga ipsa laborum magni non omnis perspiciatis porro
+                        repellat rerum vitae voluptate voluptatem voluptatibus voluptatum!</p>
+                </div>
+            </section>
+        </article>
+
+
+        <article>
             <h2 class="titulo">Programming Languages</h2>
-            <div class="contenedor-lenguajes">
+            <section class="contenedor-lenguajes">
                 <div>
                     <div><img src="http://localhost:8080/css/imagenes/HTML5.png" alt="HTML 5"></div>
                     <span>HTML 5</span>
@@ -240,7 +276,7 @@
                     <div><img src="http://localhost:8080/css/imagenes/TYPESCRIPT.png" alt="TYPESCRIPT"></div>
                     <span>TYPESCRIPT</span>
                 </div>
-            </div>
+            </section>
         </article>
 
         <article>
