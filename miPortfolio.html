@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joaquin Mongelos</title>
+    <link rel="stylesheet" href="css/miPortfolio.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<!DOCTYPE html>
+<body>
+<div id="particles-js"></div>
+<header>
+    <nav>
+        <div class="contenedor-nav">
+            <a href="#home" class="logo-txt">
+                <span class="joaquin">Joaquin</span><span class="mongelos">Mongelos</span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="contenedor-menu-nav">
+                <a class="menu-a" href="#home">Home</a>
+                <a class="menu-a" href="#proyects">Proyects</a>
+                <a class="menu-a" href="#knowledge">Knowledge</a>
+                <a class="menu-a" href="#contact">Contact</a>
+                <a class="cv-a-txt" href="pdfs/CV.pdf" target="_blank">CV</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="contenedor-principal-home" id="home">
+    <article class="contenedor-info-home fade-out-on-scroll">
+        <div>
+            <h1 class="nombre-txt">Joaquin Mongelos</h1>
+            <h2 class="profesion-txt">Web Developer</h2>
+            <h3 class="especialidades-txt">Backend & Frontend Developer</h3>
+            <p class="presentacion-txt">I am a Junior Developer with experience in university projects and a fast
+                learner of new technologies, ready to contribute value and grow professionally in the software
+                development field.</p>
+        </div>
+        <div>
+            <img src="css/imagenes/Joaquin Mongelos.jpg" alt="Joaquin Mongelos"
+                 class="imagen-joaquin">
+        </div>
+    </article>
+
+    <article id="proyects">
+        <h2 class="proyectos-txt fade-out-on-scroll">Proyects</h2>
+        <section class="contenedor-principal-proyectos fade-out-on-scroll">
+            <div class="contenedor-proyecto marco-motomensajeria">
+                <div class="imagen-proyecto">
+                    <a href="https://github.com/JoacoMongelos28/Motomensajeria" target="_blank"><img
+                            src="css/imagenes/Motomensajeria.png" alt="Motomensajeria"></a>
+                </div>
+                <p class="nombre-proyecto motomensajeria">Motomensajeria</p>
+                <p class="lenguajes-usados motomensajeria">Java | Spring | Hibernate | MYSQL | Javascript</p>
+            </div>
+            <div class="contenedor-proyecto marco-blackjack">
+                <div class="imagen-proyecto">
+                    <a href="https://github.com/JoacoMongelos28/Blackjack" target="_blank"><img
+                            src="css/imagenes/Blackjack.jpg" alt="Blackjack - Casino"></a>
+                </div>
+                <p class="nombre-proyecto blackjack">Blackjack</p>
+                <p class="lenguajes-usados blackjack">Javascript | MYSQL | Java | Spring | Hibernate</p>
+            </div>
+            <div class="contenedor-proyecto marco-pizarra-online">
+                <div class="imagen-proyecto">
+                    <a href="https://github.com/JoacoMongelos28/PizarraOnline" target="_blank"><img
+                            src="css/imagenes/Pizarra.png" alt="Pizarra Online"></a>
+                </div>
+                <p class="nombre-proyecto pizarra-online">Pizarra Online</p>
+                <p class="lenguajes-usados pizarra-online">C# | Signal R | ASP.NET | MYSQL Server</p>
+            </div>
+        </section>
+    </article>
+
+    <article id="knowledge" class="fade-out-on-scroll">
+        <h2 class="lenguajes-txt">Programming Languages</h2>
+        <section class="contenedor-lenguajes">
+            <div>
+                <div><img src="css/imagenes/HTML5.png" alt="HTML 5"></div>
+                <span>HTML 5</span>
+            </div>
+            <div>
+                <div><img src="css/imagenes/CSS3.png" alt="CSS 3"></div>
+                <span>CSS 3</span>
+            </div>
+            <div>
+                <div><img src="css/imagenes/JAVA.png" alt="JAVA"></div>
+                <span>JAVA</span>
+            </div>
+            <div>
+                <div><img src="css/imagenes/JS.png" alt="JAVASCRIPT"></div>
+                <span>JAVASCRIPT</span>
+            </div>
+            <div>
+                <div><img src="css/imagenes/MYSQL.png" alt="MYSQL"></div>
+                <span>MYSQL</span>
+            </div>
+            <div>
+                <div><img src="css/imagenes/C SHARP.png" alt="C#"></div>
+                <span>C#</span>
+            </div>
+            <div>
+                <div><img src="css/imagenes/PHP.png" alt="PHP"></div>
+                <span>PHP</span>
+            </div>
+            <div>
+                <div><img src="css/imagenes/TYPESCRIPT.png" alt="TYPESCRIPT"></div>
+                <span>TYPESCRIPT</span>
+            </div>
+        </section>
+    </article>
+
+    <article class="fade-out-on-scroll">
+        <h2 class="frameworks-txt">Frameworks</h2>
+        <div class="contenedor-frameworks">
+            <div>
+                <div><img src="css/imagenes/SPRINGBOOT.png" alt="SPRING BOOT" class="spring-boot">
+                </div>
+                <span>SPRING BOOT</span>
+            </div>
+            <div>
+                <div><img src="css/imagenes/ASPNET.png" alt="ASP.NET"></div>
+                <span>ASP.NET</span>
+            </div>
+            <div>
+                <div><img src="css/imagenes/LARAVEL.png" alt="LARAVEL" class="laravel"></div>
+                <span>LARAVEL</span>
+            </div>
+            <div>
+                <div><img src="css/imagenes/ANGULAR.png" alt="ANGULAR"></div>
+                <span>ANGULAR</span>
+            </div>
+        </div>
+    </article>
+
+    <article id="contact" class="fade-out-on-scroll">
+        <section class="contenedor-form-contacto">
+            <h2 class="contacto-txt">Contact me</h2>
+            <form id="form-contacto" class="form-contacto">
+                <label class="contacto-label">
+                    <input id="email" name="email" class="contacto-input" placeholder="Your Email" required autocomplete="email">
+                </label>
+                <label class="contacto-label">
+                    <input type="text" id="name" name="name" class="contacto-input" placeholder="Name / Company"
+                           required autocomplete="name">
+                </label>
+                <label class="contacto-label">
+                    <textarea id="message" name="message" class="contacto-textarea" placeholder="Message"
+                              required autocomplete="off"></textarea>
+                </label>
+                <button type="submit" class="boton-contacto">Send</button>
+            </form>
+        </section>
+    </article>
+</main>
+
+<footer class="footer">
+    <div class="contenedor-footer fade-out-on-scroll">
+        <div class="contenedor-full-nombre">
+            <span class="joaquin">Joaquin</span><span class="mongelos">Mongelos</span>
+        </div>
+        <div class="contenedor-principal-redes">
+            <div class="contenedor-redes">
+                <a class="github" href="https://github.com/JoacoMongelos28" target="_blank"><i
+                        class="fa-brands fa-square-github"></i></a>
+                <a class="linkedin" href="https://www.linkedin.com/in/joaquinmongelos/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a class="email" href="mailto:joaquinmongelos75@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="js/miPortfolio.js"></script>
+</body>
+</html>
