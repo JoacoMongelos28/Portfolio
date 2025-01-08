@@ -114,6 +114,10 @@ body {
     opacity: 1;
 }
 
+.boton-cv {
+    display: none;
+}
+
 .imagen-joaquin {
     max-width: 400px;
 }
@@ -571,6 +575,14 @@ body {
 
     .presentacion-txt {
         width: 100%;
+    }
+
+    .cv-a-txt {
+        padding: .7rem 2rem !important;
+    }
+
+    .boton-cv {
+        display: inline-block;
     }
 
     .nombre-proyecto {
