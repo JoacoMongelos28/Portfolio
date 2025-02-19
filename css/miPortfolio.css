@@ -157,6 +157,14 @@ body {
     border: 2px solid #00c24c;
 }
 
+.marco-retro-football-store {
+    border: 2px solid rgb(89 99 255);
+}
+
+.marco-taskerly {
+    border: 2px solid #6697ff;
+}
+
 .imagen-proyecto {
     position: relative;
     width: 100%;
@@ -236,6 +244,14 @@ body {
 
 .pizarra-online {
     color: #00c24c;
+}
+
+.retro-football-store {
+    color: rgb(89 99 255);
+}
+
+.taskerly {
+    color: #6697ff;
 }
 
 .lenguajes-usados {
