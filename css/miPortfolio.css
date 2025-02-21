@@ -266,25 +266,17 @@ body {
     font-weight: 500;
 }
 
-.contenedor-frameworks, .contenedor-lenguajes {
+.contenedor-lenguajes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px 0;
+    gap: 50px 0;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15rem;
 }
 
-.contenedor-frameworks div, .contenedor-lenguajes div {
+.contenedor-lenguajes div {
     text-align: center;
-}
-
-.frameworks-txt {
-    padding: 5rem 0;
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-
-.contenedor-frameworks {
-    margin-bottom: 10rem;
 }
 
 .spring-boot, .laravel {
